@@ -9,8 +9,7 @@ app = flask.Flask(__name__)
 #     return send_from_directory(os.path.join(app.root_path, 'static'),
 #                                'favicon.ico', mimetype='image/favicon.png')
 
-@app.route('/')
-@app.route('/home')
+@app.route('/', methods = ['POST'])
 def home():
     return "Hello World"
 
