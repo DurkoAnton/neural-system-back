@@ -23,5 +23,5 @@ class GettingRequestFromClient :
         self.input_listcontent = self.parse_JSONcontent()
         self.correcting_input_handler = CorrectingInputData(self.input_listcontent)
         if self.correcting_input_handler != null and len(self.input_listcontent) != 0:
-            self.correcting_input_handler.correct_input_data()
-        return
+           a = self.correcting_input_handler.correct_input_data()
+        return a
