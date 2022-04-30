@@ -11,7 +11,7 @@ def home():
     get_object_on_server = GettingRequestFromClient(request)
     if get_object_on_server != null:
         a = get_object_on_server.run_server_program()
-    return a.__str__()
+    return a.__str__() 
 
 if __name__ == "__main__":
     #
